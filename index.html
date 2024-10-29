@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin cá nhân</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img id="avatarImage" src="default-avatar.png" alt="Ảnh đại diện" class="avatar">
+            <h1 id="profile-name">Tên của bạn</h1>
+            <p id="profile-description">Mô tả ngắn về bản thân bạn.</p>
+        </div>
+        <div class="links">
+            <h2>Liên kết của tôi</h2>
+            <a id="link-facebook" href="#" class="button">Facebook</a>
+            <a id="link-instagram" href="#" class="button">Instagram</a>
+            <a id="link-tiktok" href="#" class="button">TikTok</a>
+            <a id="link-twitter" href="#" class="button">Twitter</a>
+            <a id="link-phone" href="tel:0123456789" class="button">Điện thoại</a>
+            <a id="link-email" href="mailto:example@gmail.com" class="button">Email</a>
+            <a id="link-zalo" href="https://zalo.me/your-zalo-id" class="button">Zalo</a>
+        </div>
+        <div class="edit-link">
+            <button id="edit-button" onclick="showPasswordInput()" class="button">Chỉnh sửa hồ sơ</button>
+            <div id="password-container" style="display: none;">
+                <input type="password" id="edit-password" placeholder="Nhập mật khẩu để chỉnh sửa" required>
+                <button onclick="editProfile()" class="button">Xác nhận</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
