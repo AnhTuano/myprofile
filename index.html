@@ -8,6 +8,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCR2puopUGvSDXvIWoJc2h8aoliO8s9h8w",
+          authDomain: "myprofile-206.firebaseapp.com",
+          databaseURL: "https://myprofile-206-default-rtdb.firebaseio.com",
+          projectId: "myprofile-206",
+          storageBucket: "myprofile-206.appspot.com",
+          messagingSenderId: "902830349983",
+          appId: "1:902830349983:web:0a64939cddc883cf538caa",
+          measurementId: "G-G1W2CQ6RYH"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    
     <div class="container">
         <div class="profile">
             <img id="avatarImage" src="default-avatar.png" alt="Ảnh đại diện" class="avatar">

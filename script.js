@@ -1,3 +1,14 @@
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    apiKey: "AIzaSyCR2puopUGvSDXvIWoJc2h8aoliO8s9h8w",
+    authDomain: "myprofile-206.firebaseapp.com",
+    databaseURL: "https://myprofile-206-default-rtdb.firebaseio.com",
+    projectId: "myprofile-206",
+    storageBucket: "myprofile-206.appspot.com",
+    messagingSenderId: "902830349983",
+    appId: "1:902830349983:web:0a64939cddc883cf538caa",
+    measurementId: "G-G1W2CQ6RYH"
+  };
 // Khi tài liệu đã được tải hoàn tất
 document.addEventListener('DOMContentLoaded', () => {
     // Kiểm tra nếu trang là index.html hoặc edit.html để tải dữ liệu thích hợp
